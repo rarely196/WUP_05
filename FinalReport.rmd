@@ -48,6 +48,16 @@ Based to the chart there are a lot more people with no symptoms than there is pe
 
 ## Inferential Results
 
+```{r}
+table1 <- xtabs(~infected + treatment, data=triUmp)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Three fifths of the women who took the drug became infected. Based off this test we can see that the drug was ineffective in preventing aids.
+
+
+## Inferential Results
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
